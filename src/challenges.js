@@ -4,7 +4,7 @@ function compareTrue(parametro1, parametro2) {
     
     return true
   
-  } else {return false}
+  } else return false
 
 
 
@@ -13,8 +13,8 @@ function compareTrue(parametro1, parametro2) {
 
 // Desafio 2
 function calcArea(base , height) {
-  
-  return(base * height)/2
+  let calculo = (base * height)/2
+  return calculo
 
 }
 
