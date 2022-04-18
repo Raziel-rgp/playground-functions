@@ -1,13 +1,15 @@
 // Desafio 1
 function compareTrue(parametro1, parametro2) {
   if(parametro1 === true && parametro2 === true){
-    
+    console.log(true)
     return true
   
   }
+  console.log(false)
   return false
-}
 
+}
+compareTrue(false, true)
 // Desafio 2
 function calcArea(base , height) {
   return (base * height)/2
@@ -26,7 +28,7 @@ function splitSentence(string) {
 // Desafio 4
 function concatName(lista_nomes) {
   
-  let lista_nomes = lista_nomes[lista_nomes.lenght - 1]
+  lista_nomes = lista_nomes[lista_nomes.lenght - 1]
   
   let lista_nomes2 = lista_nomes[0]
   
