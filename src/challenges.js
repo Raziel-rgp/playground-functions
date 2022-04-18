@@ -4,11 +4,8 @@ function compareTrue(parametro1, parametro2) {
     
     return true
   
-  } else return false
-
-
-
-
+  }
+  return false
 }
 
 // Desafio 2
