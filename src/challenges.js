@@ -39,8 +39,7 @@ function highestCount(lista) {
   
   let valor_maximo = 0
   let contador = 0
-  let i = {}
-  for 
+  //for(let i = 0; )
 }
 
 // Desafio 7
@@ -49,24 +48,29 @@ function catAndMouse(mouse, cat1, cat2) {
 
   let txt = "os gatos trombam e o rato foge"
 
-  calculo1 = cat1
-  calculo2 = cat2
+  cat1 = cat1 - mouse
+  cat2 = cat2 - mouse
   
+  Math.abs(cat1)
+  Math.abs(cat2)
+
   let txt1 = "cat1"
   let txt2 = "cat2"
 
-  if (calculo2 < calculo2){
+  if (cat2 < cat2){
     return txt1
 
-  } else if(calculo1 < calculo2){
+  } else if(cat1 < cat2){
     return txt2
 
-  }else if(calculo1 === calculo2) {
+  }else if(cat1 === cat2) {
     return txt
 
   }
-
 }
+console.log(catAndMouse(3, 2, 1))
+catAndMouse(3, 2 ,1)
+
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
@@ -74,7 +78,7 @@ function fizzBuzz() {
 
 // Desafio 9
 function encode() {
-  // seu código aqui
+  
 }
 function decode() {
   // seu código aqui
