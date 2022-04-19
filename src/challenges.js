@@ -1,15 +1,12 @@
 // Desafio 1
 function compareTrue(parametro1, parametro2) {
   if(parametro1 === true && parametro2 === true){
-    console.log(true)
     return true
   
   }
-  console.log(false)
   return false
 
 }
-compareTrue(false, true)
 // Desafio 2
 function calcArea(base , height) {
   return (base * height)/2
@@ -26,13 +23,9 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName(lista_nomes) {
-  
-  lista_nomes = lista_nomes[lista_nomes.lenght - 1]
-  
-  let lista_nomes2 = lista_nomes[0]
-  
-  return lista_nomes + ", " + lista_nomes2
+function concatName(listaNomes) {  
+  let nome1 = listaNomes.length -1
+  return listaNomes[nome1] + ', ' + listaNomes[0]
 }
 
 // Desafio 5
@@ -47,42 +40,28 @@ function highestCount(lista) {
   let valor_maximo = 0
   let contador = 0
   let i = {}
-
-  for (let index of lista) {
-    
-    if(i[index]==null) {
-
-      i[index] = 1
-
-    } else{
-      
-      i[index] += 1
-    
-    } if(i[index] > maximoContador) {
-      valor_maximo = i
-      contador = i[index]
-
-    }
-
-  }
-  return {contador}  
+  for 
 }
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  
+
 
   let txt = "os gatos trombam e o rato foge"
 
-  cat1 = cat1 - mouse
-  cat2 = cat2 - mouse
-  if(cat2 < cat1){
-    return cat2
-
-  } else if(cat1 < cat2){
-    return cat1
+  calculo1 = cat1
+  calculo2 = cat2
   
-  }else if(cat1 === cat2) {
+  let txt1 = "cat1"
+  let txt2 = "cat2"
+
+  if (calculo2 < calculo2){
+    return txt1
+
+  } else if(calculo1 < calculo2){
+    return txt2
+
+  }else if(calculo1 === calculo2) {
     return txt
 
   }
