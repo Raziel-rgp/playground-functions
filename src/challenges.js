@@ -36,20 +36,22 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(lista) {
   // fiz com a ajuda de um colega
-  
   let valor_maximo = 0
   let contador = 0
-  for(let i = 0; i <= lista.length; i++){
-    console.log(i)    
-    if(valor_maximo < i){
-      console.log(valor_maximo)
-      valor_maximo++
+  for(let i = 0; i < lista.length;i++){ 
+    if(valor_maximo != lista[i]){
+        valor_maximo = lista[i]
+        contador++
+    }else if(valor_maximo == lista[i]){
+        contador++
+
     }
-    contador++
-    console.log(contador)
   }
+  console.log(valor_maximo)
+  console.log(contador)
+  return contador
 }
-highestCount([1, 2, 2, 1])
+highestCount([9, 1, 2, 3, 9, 5, 7])
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -102,17 +104,51 @@ function fizzBuzz(listafizz) {
 }
 
 // Desafio 9
-function encode() {
-  
-
+function encode(codigo) {
+  let numeros = ''
+  for(let i = 0; i < codigo.length; i++){
+    if(codigo[i] === 'a'){
+      numeros += '1'
+    }else if(codigo[i] === 'e'){
+      numeros += '2'
+    }else if(codigo[i] === 'i'){
+      numeros += '3'
+    }else if(codigo[i] === 'o'){
+      numeros += '4'
+    }else if(codigo[i] === 'u'){
+      numeros += '5'
+    }else{
+      numeros += codigo[i]
+    }
+  }
+  return numeros
 }
-function decode() {
-  // seu código aqui
-}
+console.log(encode('How are you today'))
 
+
+function decode(codificado) {
+  let numeros = ''
+  for(let i = 0; i < codificado.length; i++){
+    if(codificado[i] === '1'){
+      numeros += 'a'
+    }else if(codificado[i] === '2'){
+      numeros += 'e'
+    }else if(codificado[i] === '3'){
+      numeros += 'i'
+    }else if(codificado[i] === '4'){
+      numeros += 'o'
+    }else if(codificado[i] === '5'){
+      numeros += 'u'
+    }else{
+      numeros += codificado[i]
+    }
+  }
+  return numeros
+}
+console.log(decode('h2ll4 th2r2'))
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(listaTech) {
+
 }
 
 module.exports = {
