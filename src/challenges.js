@@ -39,7 +39,10 @@ function highestCount(lista) {
   
   let valor_maximo = 0
   let contador = 0
-  //for(let i = 0; )
+  for(let i = 0; i <= lista.length; i++){
+
+
+  }
 }
 
 // Desafio 7
@@ -47,29 +50,27 @@ function catAndMouse(mouse, cat1, cat2) {
 
 
   let txt = "os gatos trombam e o rato foge"
-
-  cat1 = cat1 - mouse
-  cat2 = cat2 - mouse
-  
-  Math.abs(cat1)
-  Math.abs(cat2)
+  let d = Math.abs(cat1 - mouse)
+  let e = Math.abs(cat2 - mouse)
+  //Math.abs(cat1)
+  //Math.abs(cat2)
 
   let txt1 = "cat1"
   let txt2 = "cat2"
 
-  if (cat2 < cat2){
-    return txt1
-
-  } else if(cat1 < cat2){
+  if (e < d) {
     return txt2
 
-  }else if(cat1 === cat2) {
+  } else if(d < e) {
+    return txt1
+
+  }else {
     return txt
 
   }
 }
-console.log(catAndMouse(3, 2, 1))
-catAndMouse(3, 2 ,1)
+
+console.log(catAndMouse(2, 4 ,6))
 
 // Desafio 8
 function fizzBuzz() {
