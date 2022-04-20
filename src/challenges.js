@@ -40,10 +40,16 @@ function highestCount(lista) {
   let valor_maximo = 0
   let contador = 0
   for(let i = 0; i <= lista.length; i++){
-
-
+    console.log(i)    
+    if(valor_maximo < i){
+      console.log(valor_maximo)
+      valor_maximo++
+    }
+    contador++
+    console.log(contador)
   }
 }
+highestCount([1, 2, 2, 1])
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -73,13 +79,32 @@ function catAndMouse(mouse, cat1, cat2) {
 console.log(catAndMouse(2, 4 ,6))
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(listafizz) {
+  let fizztxt = 'bug!'
+  let fizztxt1 = 'fizz'
+  let fizztxt2 = 'buzz'
+  let fizztxt3 = 'fizzBuzz'
+  let resposta = []
+  for(let i = 0; i < listafizz.length; i++){
+    if (listafizz[i] % 3 === 0 & listafizz[i] % 5 === 0){
+      resposta.push(fizztxt3)
+    } else if(listafizz[i] % 3 === 0){
+      resposta.push(fizztxt1)
+
+    }else if(listafizz[i]% 5 === 0){
+      resposta.push(fizztxt2)
+  
+    }else{
+      resposta.push(fizztxt)
+    }
+  }
+  return resposta
 }
 
 // Desafio 9
 function encode() {
   
+
 }
 function decode() {
   // seu código aqui
